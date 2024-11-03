@@ -1,0 +1,113 @@
+.game-screen {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-image: url('../../public/assets/gameBckG.png'); 
+  background-size: cover; 
+  background-position: center; 
+  height: 100vh; 
+  width: 100vw; 
+  min-height: 100vh;
+  background-attachment: fixed; 
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+.pause-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  margin-right: 30px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #4b6c8f;
+  color: white;
+  transition: background-color 0.3s;
+  z-index: 10; 
+}
+
+.pause-button:hover {
+  background-color: #4f5a65;
+}
+
+.columns {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px; 
+  margin-top: 20px;
+  flex-wrap: wrap; 
+  box-sizing: border-box;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  width: 100px; 
+  margin: 5px;
+  box-sizing: border-box;
+}
+
+.stock {
+  margin-top: 20px;
+  width: 100%; 
+  max-width: 100px; 
+  box-sizing: border-box;
+  background-color: #4f5a65;
+}
+
+.undo-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 1rem;
+  margin-left: 30px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 10; 
+}
+
+.undo-button:disabled {
+  background-color: #666;
+  cursor: not-allowed;
+}
+
+.hint-button {
+  position: absolute;
+  top: 60px; 
+  right: 10px; 
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #4b6c8f;
+  color: white;
+  transition: background-color 0.3s;
+  z-index: 10; 
+}
+
+.hint-button:hover {
+  background-color: #0056b3;
+}
+
+.flash-border {
+  animation: flash 1s infinite;
+}
+
+@keyframes flash {
+  0% { border: 2px solid red; }
+  50% { border: 2px solid transparent; }
+  100% { border: 2px solid red; }
+}

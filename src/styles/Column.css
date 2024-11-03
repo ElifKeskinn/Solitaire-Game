@@ -1,0 +1,26 @@
+.column {
+  width: 105px; /* Sütun genişliği */
+  height: 950px; /* Sütun yüksekliği */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px;
+  position: absolute;
+  min-height: 200px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  padding: 5px;
+  overflow: auto;
+  background-image: url('../../public/assets/gameBckG.png'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  z-index: 0; 
+}
+
+.column-card {
+  width: 100%;
+  height: auto;
+  margin: 5px 0;
+  cursor: pointer;
+}
